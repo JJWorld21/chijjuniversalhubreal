@@ -29,10 +29,10 @@ MainSection:NewSlider("WalkSpeed", "Changes how fast you can walk.", 1000, 16, f
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 end)
 
-MainSection:NewSlider("JumpPower", "Changes how fast you can jump.", 1250, 50, function(v)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+MainSection:NewSlider("JumpPower", "Changes how fast you can jump.", 1000, 50, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
-
+-- Scripts Tab
 local Scripts = Window:NewTab("Scripts")
 local ScriptsSection = Scripts:NewSection("Admin")
 
@@ -56,6 +56,12 @@ ScriptsSection:NewButton("Punch_Wall_Simulator", " Punch Wall Simulator Advanced
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/PunchWallSim.lua"))()
 end)
 
+local ScriptsSection = Scripts:NewSection("Brookhaven")
+ScriptsSection:NewButton("Brookhaven (IceHub)", " Brookhaven Advanced GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/AvatarUnlocker/main/IceHub"))()
+end)
+
+
 
 
 
@@ -74,3 +80,18 @@ local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("Credits")
 
 CreditsSection:NewLabel("Created by JJ and https://dsc.gg/chijj")
+CreditsSection:NewLabel("Huge thanks to Kavo UI! For making this hub possible!")
+-- Other Hubs Tab
+local OtherHubs = Window:NewTab("Other_Hubs")
+local OtherHubsSection = OtherHubs:NewSection("Other_Hubs")
+
+OtherHubsSection:NewButton("Games_Hub", "A very good hub for finding scripts!", function()    loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-Hub-Script/main/Games%20Hub%20(Always%20updated)"))()
+end)
+
+OtherHubsSection:NewButton("Bido_Skins", "A very good hub for finding scripts!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20SkinsV1.5"))()
+end)
+
+OtherHubsSection:NewButton("The_Hub", "A very good hub for finding scripts!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hassantheking123321/Everybody/main/My%20hub"))();
+  end)
