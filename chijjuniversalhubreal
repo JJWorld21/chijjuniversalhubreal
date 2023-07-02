@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Chijj Universal Hub V.02 BETA", "Synapse")
+local Window = Library.CreateLib("Chijj Universal Hub V.02", "Synapse")
 
 -- Tabs
 
@@ -32,6 +32,13 @@ end)
 MainSection:NewSlider("JumpPower", "Changes how fast you can jump.", 1000, 50, function(v)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
+
+MainSection:NewButton("Reset WalkSpeed", "Resets to default walkspeed!", function()
+     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+MainSection:NewButton("Reset JumpPower", "Resets to default jumppower!!", function()
+  game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50  
 -- Scripts Tab
 local Scripts = Window:NewTab("Scripts")
 local ScriptsSection = Scripts:NewSection("Admin")
@@ -95,3 +102,9 @@ end)
 OtherHubsSection:NewButton("The_Hub", "A very good hub for finding scripts!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hassantheking123321/Everybody/main/My%20hub"))();
   end)
+
+-- Our Other Hubs
+    local OurOtherHubs = Window:NewTab("Our_Other_Hubs")
+local OurOtherHubsSection = OurOtherHubs:NewSection("Other_Hubs")
+
+    OurOtherHubsSection:NewLabel("We do not have any other hubs and the moment but we will update you when one is here!")
