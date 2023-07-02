@@ -79,6 +79,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/AvatarUnlock
     print("Script loaded by Chijj")
 end)
 
+local ScriptsSection = Scripts:NewSection("Arsenal")
+ScriptsSection:NewButton("Arsenal (OwlHub)", " Arsenal Advanced GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+    print("Script loaded by Chijj")
+end)
+
+ScriptsSection:NewButton("Arsenal (StrikeHub)", " Arsenal Advanced GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ccxmIcal/cracks/main/strikehub.lua"))()
+    print("Script loaded by Chijj")
+end)
+
+
+
 
 
 
